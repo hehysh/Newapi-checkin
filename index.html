@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewAPI 自动签到</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 16px;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .feature {
+            margin-bottom: 30px;
+        }
+
+        .feature h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .feature p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: block;
+            padding: 15px 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);
+        }
+
+        .btn-secondary:hover {
+            box-shadow: 0 6px 20px rgba(72, 187, 120, 0.4);
+        }
+
+        .features-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .features-list li {
+            padding: 10px 0;
+            color: #4a5568;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .features-list li:last-child {
+            border-bottom: none;
+        }
+
+        .features-list li::before {
+            content: '✓';
+            color: #48bb78;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f7fafc;
+            color: #718096;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 NewAPI 自动签到</h1>
+            <p>支持多账号、多站点的自动签到解决方案</p>
+        </div>
+
+        <div class="content">
+            <div class="feature">
+                <h3>🎯 项目简介</h3>
+                <p>基于 HTTP 直连的 NewAPI 自动签到脚本，支持多账号、多站点配置，通过 GitHub Actions 实现每日自动签到。</p>
+            </div>
+
+            <div class="feature">
+                <h3>✨ 核心功能</h3>
+                <ul class="features-list">
+                    <li>支持多个不同的 NewAPI 站点</li>
+                    <li>可视化配置工具，无需编写代码</li>
+                    <li>GitHub Actions 自动化执行</li>
+                    <li>详细的签到日志和统计</li>
+                    <li>错误处理和超时控制</li>
+                </ul>
+            </div>
+
+            <div class="btn-container">
+                <a href="config_generator.html" class="btn">
+                    🛠️ 打开配置生成器
+                </a>
+                <a href="QUICK_START.md" class="btn btn-secondary">
+                    🚀 快速开始指南
+                </a>
+                <a href="https://github.com/你的用户名/Newapi-checkin" class="btn btn-secondary" target="_blank">
+                    📖 查看完整文档
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Made with ❤️ | <a href="https://github.com/你的用户名/Newapi-checkin" target="_blank">GitHub</a></p>
+        </div>
+    </div>
+</body>
+</html>
