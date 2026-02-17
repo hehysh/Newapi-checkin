@@ -2,6 +2,7 @@ name: Github Action with a cronjob trigger
 on:
   schedule:
     - cron: 15 4 1 * *
+  workflow_dispatch:      # 允许手动触发按钮
 jobs:
   main-job:
     name: Main Job
